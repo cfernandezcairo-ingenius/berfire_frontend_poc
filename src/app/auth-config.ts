@@ -45,8 +45,8 @@ export const msalConfig: Configuration = {
         clientId: 'bad08f92-cd93-42f6-bb79-829df6e105b4', // This is the ONLY mandatory field that you need to supply.
         authority: b2cPolicies.authorities.signUpSignIn.authority, // Defaults to "https://login.microsoftonline.com/common"
         knownAuthorities: [b2cPolicies.authorityDomain], // Mark your B2C tenant's domain as trusted.
-        redirectUri: 'https://agreeable-plant-051ad6e03.4.azurestaticapps.net/', // Points to window.location.origin by default. You must register this URI on Azure portal/App Registration.
-        postLogoutRedirectUri: 'https://agreeable-plant-051ad6e03.4.azurestaticapps.net/', // Points to window.location.origin by default.
+        redirectUri: '/', // Points to window.location.origin by default. You must register this URI on Azure portal/App Registration.
+        postLogoutRedirectUri: '/', // Points to window.location.origin by default.
     },
     cache: {
         cacheLocation: BrowserCacheLocation.LocalStorage, // Configures cache location. "sessionStorage" is more secure, but "localStorage" gives you SSO between tabs.
